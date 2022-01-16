@@ -1,0 +1,24 @@
+.box img{
+    max-width: 4vw;
+    /* min-height: 25px; */
+    aspect-ratio: 1;
+}
+
+.box{
+    display: grid;
+    place-items: center;
+    
+    width: 25%;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+
+    margin: 1%;
+    border-radius: 20%;
+
+    background-color: pink;
+}
+
+.box:hover{
+    background: #3d4250;
+    transition: 0.45s;
+}

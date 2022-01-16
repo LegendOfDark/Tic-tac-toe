@@ -1,0 +1,39 @@
+body{
+    /* overflow: hidden; */
+    background:  rgb(255,76,76);
+    box-sizing: border-box;
+}
+.game {
+  height: 100vh;
+}
+
+.game .circle {
+  height: 0;
+  aspect-ratio: 1;
+  background-color: #FFDB1E;
+}
+.game .circle-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game .circle-animation{
+  z-index: 1;
+  border-radius: 50%;
+  animation: growDown 4s 0s;
+  animation-fill-mode: forwards; 
+}
+
+  
+
+@keyframes growDown {
+  0% { transform: scale(1); height: 2500px; width: 2500px;}
+  100% { transform: scale(0);  height: 0; width: 0;}
+}

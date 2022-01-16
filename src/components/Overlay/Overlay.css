@@ -1,0 +1,79 @@
+.overlay-background{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    display: grid;
+    place-items: center;
+}
+
+
+.overlay{
+    overflow: auto;
+    width: 600px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0 0 0 100vh rgba(0,0,0,0.4);
+    font-family: monospace;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.overlay-title{
+    transition: .5s;
+    font-size: 3em;
+    margin: 0.75em 0;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.img{
+    width: 80%;
+    border-radius: 5px;
+}
+
+.button{
+    color: white;
+    font-size: 1.5em;
+    font-family: monospace;
+    padding: 1em 1.5em;
+    transition: .5s;
+    background-size: 200% auto;
+    font-weight: 900;
+    margin: 1.75em 0;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    
+}
+
+.button:hover{
+    background-position: right bottom; 
+}
+@media (max-width: 650px){
+    .overlay{
+        width: 80%;
+    }
+    .overlay-title{
+        font-size: calc(16px + 2vw)
+    }
+    .img{
+        width: auto;
+        width: 95%;
+    }
+    .button{
+        font-size: 1em;
+    }
+}

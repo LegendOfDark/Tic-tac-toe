@@ -1,0 +1,33 @@
+.parent{
+    position: absolute;
+
+    transition: .5s;
+    
+    left: 35vw;
+    top: 30%;
+
+    width: 30vw;
+    aspect-ratio: 1;
+    border-radius: 20%;
+    
+    background: lightblue;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 1200px){
+    .parent{
+        width: 50vw;
+        left: 25vw;
+    }
+}
+
+@media (max-width: 500px){
+    .parent{
+        width: 75vw;
+        left: 12.25vw;
+    }
+}

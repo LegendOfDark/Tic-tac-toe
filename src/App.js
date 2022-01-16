@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Intro from './components/Intro/Intro'
+import Game from './components/Game/Game'
+import {
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 
-function App() {
+const App = () => {
+  let navigate = useNavigate();
+  const handleClick = () => {
+    setTimeout(() => {
+      navigate("/tic-tac-toe")
+    }, 2500);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* header */}
+      <Routes>
+        <Route path='/' element={<Intro buttonClickHandler={handleClick} />} />
+        <Route path='/tic-tac-toe' element={<Game />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
     </div>
-  );
+  )
 }
+
 
 export default App;
