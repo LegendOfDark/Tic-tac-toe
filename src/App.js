@@ -12,7 +12,7 @@ const App = () => {
   let navigate = useNavigate();
   const handleClick = () => {
     setTimeout(() => {
-      navigate("/tic-tac-toe")
+      navigate("/intro")
     }, 2500);
   }
 
@@ -20,8 +20,8 @@ const App = () => {
     <div>
       {/* header */}
       <Routes>
-        <Route path='/intro' element={<Intro buttonClickHandler={handleClick} />} />
-        <Route path='/tic-tac-toe' element={<Game />} />
+        <Route path='/tic-tac-toe' element={<Intro buttonClickHandler={handleClick} />} />
+        <Route path='/intro' element={<Game />} />
         <Route path="*" element={<Navigate to="/intro" />} />
       </Routes>
     </div>
