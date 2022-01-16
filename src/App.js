@@ -22,7 +22,7 @@ const App = () => {
       <Routes>
         <Route path='/intro' element={<Intro buttonClickHandler={handleClick} />} />
         <Route path='/tic-tac-toe' element={<Game />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/intro" />} />
       </Routes>
     </div>
   )
