@@ -20,7 +20,7 @@ const App = () => {
     <div>
       {/* header */}
       <Routes>
-        <Route path='/' element={<Intro buttonClickHandler={handleClick} />} />
+        <Route path='/intro' element={<Intro buttonClickHandler={handleClick} />} />
         <Route path='/tic-tac-toe' element={<Game />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
