@@ -12,11 +12,14 @@ import tie3 from '../../assets/tie-folder/8.jpeg'
 import tie4 from '../../assets/tie-folder/9.jpeg'
 import tie5 from '../../assets/tie-folder/10.jpeg'
 
-
+import {
+    useNavigate,
+  } from "react-router-dom";
 const win_arr = [gif1, gif2, gif3, gif4, gif5]
 const tie_arr = [tie1, tie2, tie3, tie4, tie5]
-
+let navigate;
 function Overlay(props) {
+    navigate = useNavigate();
     let randomItem;
     let displayText;
 
@@ -43,7 +46,7 @@ function Overlay(props) {
 
 function refreshPage(){
     setTimeout(() => {
-        window.location.reload();
+        navigate("/tic-tac-toe");
     }, 500);
 } 
 
