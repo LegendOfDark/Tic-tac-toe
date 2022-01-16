@@ -3,14 +3,14 @@
 
     transition: .5s;
     
-    left: 35vw;
-    top: 30%;
+    left: 32.5vw;
+    top: 25%;
 
-    width: 30vw;
+    width: 35vw;
     aspect-ratio: 1;
     border-radius: 20%;
     
-    background: lightblue;
+    /* background: lightblue; */
     
     display: flex;
     flex-flow: row wrap;
