@@ -1,4 +1,4 @@
-# TicTacToe
+# TicTacToe (Human vs human)
 
 The classic game created in react with my own personalized touch added to it.
 
